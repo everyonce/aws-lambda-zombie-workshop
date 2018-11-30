@@ -1,1 +1,1 @@
-#1 - Typing Inidcator
+# 1 - Typing Inidcator
