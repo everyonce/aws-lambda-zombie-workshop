@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08ac1c5d-870a-4720-9214-3aa7b3aad6e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1 - Typing Indicator/code/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2 - SMS Integration with Twilio/code/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3 - Search with Elasticsearch Service/code/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4 - Slack Integration/code/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/5 - Motion Sensor Integration/code/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/6 - Workshop Cleanup/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -143,61 +138,6 @@
               <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="1 - Typing Indicator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="1 - Typing Indicator" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="2 - SMS Integration with Twilio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="2 - SMS Integration with Twilio" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="3 - Search with Elasticsearch Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="3 - Search with Elasticsearch Service" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="4 - Slack Integration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="4 - Slack Integration" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="5 - Motion Sensor Integration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aws-lambda-zombie-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aws-lambda-zombie-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="5 - Motion Sensor Integration" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -236,12 +176,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543605641768</updated>
-      <workItem from="1543605643131" duration="628000" />
+      <workItem from="1543605643131" duration="1004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="628000" />
+    <option name="totallyTimeSpent" value="1004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="87" y="23" width="1108" height="682" extended-state="0" />
