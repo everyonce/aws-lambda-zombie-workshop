@@ -7,6 +7,17 @@ pir_sensor = 8
 motion=0
 grovepi.pinMode(pir_sensor,"INPUT")
 
+from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
+mqtt = AWSIoTMQTTClient
+mq = mqtt("zombie_sensor")
+mq.configureEndpoint("YOUR.ENDPOINT",8883)
+mq.configureCredentials("YOUR/ROOT/CA/PATH", "PRIVATE/KEY/PATH", "CERTIFICATE/PATH")
+mq.configureAutoReconnectBackoffTime(1, 32, 20)
+mq.configureOfflinePublishQueueing(-1)
+mq.configureDrainingFrequency(2)
+mq.configureMQTTOperationTimeout(5)
+mq.connect()
+
 cities = [
     ['London',51.507351,-0.127758],
     ['Las Vegas',36.169941,-115.139830],
@@ -36,6 +47,7 @@ def generateAlert():
     city = pickCity()
     message = '{"message":"A Zombie has been detected in ' + city[0] + '!", "longitude":"' + str(city[2]) + '", "latitude":"' + str(city[1]) + '"}'
     print(message)
+    mq.publish('zombie-alert',message,1)
 
 def periodicActivity():
     while 1:
@@ -48,4 +60,3 @@ def periodicActivity():
         time.sleep(1)
 
 periodicActivity()
-
