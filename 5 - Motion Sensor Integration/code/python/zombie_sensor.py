@@ -23,7 +23,12 @@ cities = [
 
 def pickCity():
     city = random.choice(cities)
-    print(city)
+    return city
 
-pickCity()
+def generateAlert():
+    city = pickCity()
+    message = '{"message":"A Zombie has been detected in ' + city[0] + '!", "longitude":"' + str(city[2]) + '", "latitude":"' + str(city[1]) + '"}'
+    print(message)
+
+generateAlert()
 
