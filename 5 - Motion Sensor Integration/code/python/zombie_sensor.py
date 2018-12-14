@@ -1,6 +1,11 @@
 import boto3
+import grovepi
 import random
 import time
+
+pir_sensor = 8
+motion=0
+grovepi.pinMode(pir_sensor,"INPUT")
 
 cities = [
     ['London',51.507351,-0.127758],
@@ -34,7 +39,12 @@ def generateAlert():
 
 def periodicActivity():
     while 1:
-        generateAlert()
+        motion=grovepi.digitalRead(pir_sensor)
+        if motion==0 or motion==1:
+            if motion==1:
+                generateAlert()
+            else:
+                print('--------------------All Clear--------------------')
         time.sleep(1)
 
 periodicActivity()
