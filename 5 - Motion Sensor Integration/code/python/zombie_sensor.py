@@ -1,4 +1,6 @@
+import boto3
 import random
+import time
 
 cities = [
     ['London',51.507351,-0.127758],
@@ -30,5 +32,10 @@ def generateAlert():
     message = '{"message":"A Zombie has been detected in ' + city[0] + '!", "longitude":"' + str(city[2]) + '", "latitude":"' + str(city[1]) + '"}'
     print(message)
 
-generateAlert()
+def periodicActivity():
+    while 1:
+        generateAlert()
+        time.sleep(1)
+
+periodicActivity()
 
