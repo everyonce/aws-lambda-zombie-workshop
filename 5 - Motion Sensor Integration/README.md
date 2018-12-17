@@ -1,6 +1,4 @@
-# 5 - Motion Sensor Integration
-
-## Lab 5 - Motion Sensor Integration with Raspberry Pi and Grove Components
+# Lab 5 - Motion Sensor Integration with Raspberry Pi and Grove Components
 
 In this section, you'll help protect suvivors from zombies. Zombie motion sensor devices allow communities to determine if zombies (or intruders) are nearby. You'll setup a Lambda function to consume motion sensor events from an IoT device and push the messages into your chat application.
 
