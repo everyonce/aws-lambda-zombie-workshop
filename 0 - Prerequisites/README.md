@@ -101,7 +101,7 @@ On the Tags page, leave the defaults and click **Next step**. Next, on the Devic
 
 11\. Review the settings for your User Pool and click **Create pool**. If your pool created successfully you should be returned to the Pool Details page and it will display a green box that says "Your user pool was created successfully".
 
-12\. Open a text editor on your computer and copy into it the "Pool Id" displayed on the Pool details page. Then click into the **Apps** tab found on the left side navigation pane. You should see an **App client id** displayed. Copy that **App client id** into your text editor as well.
+12\. Open a text editor on your computer and copy into it the "Pool Id" displayed on the Pool details page. Then click into the **App clients** tab found on the left side navigation pane. You should see an **App client id** displayed. Copy that **App client id** into your text editor as well.
 
 You are done configuring the User Pool. You will now setup federation into the Cognito Identity Pool that has already been created for you.
 
@@ -115,13 +115,13 @@ On the top navigation bar in the management console, switch to **Federated Ident
 
 ![Navigating to Federated Identities Console](/Images/Cognito-Step12.png)
 
-13\. Click into the Identity Pool that has already been created for you. It should be named "[Your CloudFormation stack name] _ identitypool". On the Idenity pool dashboard, in the upper right, select **Edit identity pool**.
+13\. Click into the Identity Pool that has already been created for you. It should be named "[Your CloudFormation stack name] _ identitypool". Once in the Identity pool dashboard, in the upper right, select **Edit identity pool**.
 
 14\. Cognito Identity allows you to give access to both authenticated users and unauthenticated (guest) users. The permissions associated with these groups of users is dictated by the IAM role that you attach to these Cognito roles. Your Authenticated and Unauthenticated Cognito roles have already been configured for you in CloudFormation. The Authenticated role has been configured to give permissions to the principal (your Cognito authenticated application user) to make "execute-api:invoke" calls to the API Gateway endpoint ARNs associated with the survivor serverless app.
 
 * When users authenticate into the application, they become an authenticated user, and the application allows them to send chat messages to the survivor chat.
 
-15\. Click the black dropdown arrow in the section titled "Authentication providers". You will configure your Identity pool to allow federated access from your Identity Provider, your Cognito User Pool. In the "Cognito" identity provider tab, insert your **User Pool ID** and **App Client ID** into their respective text boxes from your text editor file. Do not delete them from the text file, you'll need these items again in a later step.
+15\. Click the black dropdown arrow to expand the section titled "Authentication providers". You will configure your Identity pool to allow federated access from your Identity Provider, your Cognito User Pool. In the "Cognito" identity provider tab, insert your **User Pool ID** and **App Client ID** into their respective text boxes from your text editor file. Do not delete them from the text file, you'll need these items again in a later step.
 
 You should have copied these from your User Pool earlier when you set it up. If you do not have these copied, please navigate back to your Cognito User Pool you created earlier and locate your User Pool Id and App Client ID.
 
@@ -151,7 +151,7 @@ Download the **S3/assets/js.constants.js** file to your local machine and open i
 
 * The Identity Pool Id was automatically filled in with several other variables when the CloudFormation template was launched.
 
-20\. Save the constants.js file and upload it back to S3. While in the S3 console window, make sure you are in the **js** directory. Click the blue **Upload** button and upload the constants.js file from your local machine. Within the upload dialog, select the "Manage public permissions" dropdown and set the permissions on the file to read-only for the public by selecting the **Read** checkbox next to Everyone under the Objects category. You can also drag your file from your local machine into the S3 browser console to initiate an upload and then when the object is uploaded, make sure to select **Make Public**.
+20\. Save the constants.js file and upload it back to S3. While in the S3 console window, make sure you are in the **js** directory. Click the blue **Upload** button and upload the constants.js file from your local machine. Within the upload dialog, select the "Manage public permissions" dropdown and set the permissions on the file to read-only for the public by selecting the **Read** checkbox next to Everyone under the Objects category. You can also drag your file from your local machine into the S3 browser console to initiate an upload and then when the object is uploaded, make sure to select the file and use the Actions dropdown to choose **Make Public**.
 
 * Your application now has the configuration it needs to interact with Cognito.
 
